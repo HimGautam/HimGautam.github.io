@@ -1,5 +1,4 @@
 theme: jekyll-theme-midnight
 name: Himanshu's
-title: null
-github:
-  is_project_page: false
+site.title: Himanshu
+
