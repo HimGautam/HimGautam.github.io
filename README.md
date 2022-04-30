@@ -13,6 +13,7 @@ Github: github.com/HimGautam <br/>
 
 
 ___Publications___:<br/>
+
 1) Himanshu, A. Singha, A. Kumar, and A. K. Ray, "Path Planning of Mobile Robot using
 Adaptive Particle Swarm Optimization", in 2 nd Int. Conf. on Innovations in Computational
 Intelligence and Computer Vision, Springer, 2021. (Link will be provided soon)
@@ -27,10 +28,12 @@ Used pretrained EfficientNet B3 architecture as the backbone for transfer learni
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![semantic](https://user-images.githubusercontent.com/70597091/166001522-fbf7cf55-b945-4c22-91c5-60221f17da54.gif)<br/>
 
+
 2) Depth Estimation <br/>
 This project is my own implementation of Unsupervised Monocular Depth Estimation with Left-Right Consistency [paper](https://arxiv.org/pdf/1609.03677.pdf) by C. Godard, O. M. Aodha and G. J. Brostow. [Project Link](https://github.com/HimGautam/Depth-Estimation-).<br/>
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ![depth](https://user-images.githubusercontent.com/70597091/166003383-2c4a9115-664e-4183-955b-b6975bccf31c.gif)<br/>
+
 
 3) Breakout-Playing-AI <br/>
 This project is my own implementation of Double Deep Q Learning [paper](https://arxiv.org/pdf/1509.06461.pdf) by Hado van Hasselt and Arthur Guez and David Silver. [Project Link](https://github.com/HimGautam/Breakout-Playing-AI).<br/>
