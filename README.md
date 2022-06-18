@@ -1,1 +1,1 @@
-Go to my website at HimGautam.github.io
+My website: [HimGautam.github.io](HimGautam.github.io)
