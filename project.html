@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Himanshu</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<!-- <a href="index.html" class="logo">Himanshu <h6>+91-9161818125 <br> himanshukmr234@gmail.com</h6></a> -->
+
+					</header>
+
+				<!-- Nav -->
+						<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">About Me</a></li>
+							<li><a href="research-pub.html">Research & Publication</a></li>
+							<li class="active"><a href="project.html">Project</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="mailto:himanshukmr234@gmail.com" class="icon brands fa-google-plus"><span class="label">Gmail</span></a></li>
+							<li><a href="https://linkedin.com/in/himgautam" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/HimGautam" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+									<!-- Featured Post -->
+							<section class="post">
+								<header class="major">
+									<h3>Learning to Fly</h3>
+								</header>
+								<div class="image main"><video width="100%" height="500" controls><source src="images/Fly.mp4" type="video/mp4"></video></div>
+								<p> In this project, my main goal was to use Reinforcement Learning to learn a policy for the task of position tracking in quadrotor.
+								I used Twin Delayed Deep Deterministic Policy Gradient (TD3) algorithm with a 3 layered Neural Network to for both Policy and Critic Networks. I used Position, Orientation, Translational Velocity, Angular Velocity, Desired Position for states and actions were RPMs (motor speed) for each motor. The resulting policy seems to correlate with target position but has some error. Also, some times the policy oscillates around a target position due to unknown reasons. Further improvement in observation and reward can improve the performance and the previous issues of the policy. <a href="https://github.com/HimGautam/LearningToFly">(Project Link)</a></p>
+							</section>
+
+							<section class="post">
+								<header class="major">
+									<h3>Bipedal Walker</h3>
+								</header>
+								<div class="image main"><center><img src="images/pic02.gif" height = "60%", style="width:80%", alt="" /></center></div>
+								<p> Through this project my aim was to test various Reinforcement Learning Algorithm for continouos control problem before they could be applied in research work. I used OpenAI Gym's Bipedal Walker Environment in this project. Due to the simplicity of this environment, the implementation and debugging of RL algorithm can easily be done. I used this environment for testing Neuroevolution of augmenting topologies (NEAT), Proximal Policy Optimization (PPO), Deep Deterministic Policy Gradient (DDPG), DDPG with parameter noise, Twin Delayed Deep Deterministic Policy Gradient (TD3). </p>
+								<p> Neuroevolution of augmenting topologies (NEAT) <a href="https://github.com/HimGautam/BipedalWalkerNEAT">(Project Link)</a> <br/>
+									Proximal Policy Optimization (PPO) <a href="https://github.com/HimGautam/BipedalWalkerPPO">(Project Link)</a> </br>
+									Deep Deterministic Policy Gradient (DDPG) <a href="https://github.com/HimGautam/BipedalWalkerDDPG">(Project Link)</a> </br>
+									DDPG with parameter noise <a href="https://github.com/HimGautam/BipedalWalkerDDPG/tree/main/ParamNoise">(Project Link)</a> </br>
+									Twin Delayed Deep Deterministic Policy Gradient (TD3) <a href="https://github.com/HimGautam/BipedalWalkerTD3">(Project Link)</a></p>
+							</section>
+
+							<section class="post">
+								<header class="major">
+									<h3>Cartpole</h3>
+								</header>
+								<div class="image main"><center><img src="images/pic03.gif" height = "50%", style="width:70%", alt="" /></center></div>
+								<p> This project tries to solve the control problem of Cartpole Balancing using Reinforcement Learning Methods. The environment used in this project is from OpenAI Gym's Cartpole Environment. It uses discreet action space (go left or go right) to control the cart which inturn balances the pole. I have used PPO and DDPG for this project</p>
+								<p> Proximal Policy Optimization (PPO) <a href="https://github.com/HimGautam/ppo-cartpole">(Project Link)</a> <br/>
+									Deep Deterministic Policy Gradient (DDPG) <a href="https://github.com/HimGautam/CartpoleDDPG">(Project Link)</a></p>
+							</section>
+
+							<section class="post">
+								<header class="major">
+									<h3>Breakout AI</h3>
+								</header>
+								<div class="image main"><center><img src="images/pic04.gif" height = "50%", style="width:50%", alt="" /></center></div>
+								<p> This project is based on the paper named "Deep Reinforcement Learning with Double Q-learning" (DDQN). It uses a Convolutional Neural Network to learn a Q function. This Q function can then be used to choose action which gave have best Q Value. For exploration, we sometime choose a random action, thus forming a Epsilon Greedy Policy. <a href="https://github.com/HimGautam/Breakout-Playing-AI">(Project Link)</a> </p>
+							</section>
+
+							<section class="post">
+								<header class="major">
+									<h3>Semantic Segmentation</h3>
+								</header>
+								<div class="image main"><center><img src="images/pic05.gif" height = "60%", style="width:60%", alt="" /></center></div>
+								<p> This project was a part of my final year thesis. In this, a Convolutional Neural Network (EfficientNet) is used to learn semantic information from an RGB image of an Urban Scene. I used a method called tranfer learning to reduce computational burden. <a href="https://github.com/HimGautam/Semantic-Segmentation">(Project Link)</a> </p>
+							</section>
+
+							<section class="post">
+								<header class="major">
+									<h3>Depth Estimation</h3>
+								</header>
+								<div class="image main"><center><img src="images/pic06.gif" height = "60%", style="width:60%", alt=""/></center></div>
+								<p> This project was a part of my final year thesis. In this, a Convolutional Neural Network (EfficientNet) is used to learn depth information from an RGB image of an Urban Scene. During the training process, stereo image pair are used. During the inference, only one image is used to predict the Depth/Disparity map from an image. Tranfer learning is also used to reduce computational burden. <a href="https://github.com/HimGautam/Depth-Estimation-">(Project Link)</a> </p>
+							</section>
+
+							<section class="post">
+								<header class="major">
+									<h3>Face Mask Detection</h3>
+								</header>
+								<div class="image main"><center><img src="images/pic07.gif" height = "60%", style="width:60%", alt=""/></center></div>
+								<p> This project was a part of my Internship Project. It is uses Haar Cascade and Convolutional Neural Network to determine if a Person has the Covid Mask On or not. <a href="https://github.com/HimGautam/Face-Mask-Detection">(Project Link)</a> </p>
+							</section>
+
+							<section class="post">
+								<header class="major">
+									<h3>Face Detector</h3>
+								</header>
+								<div class="image main"><center><img src="images/pic08.gif" height = "60%", style="width:60%", alt=""/></center></div>
+								<p> In this project we use OpenCV and HaarCascade for face detection.<a href="https://github.com/HimGautam/Face-Detection">(Project Link)</a> </p>
+							</section>
+					</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy;</li><li>By : <a href="#">Himanshu</a></li></ul>
+						<ul><li><a href="https://linkedin.com/in/himgautam">linkedin.com/in/himgautam</a></li> <li><a href="mailto:himanshukmr234@gmail.com">himanshukmr234@gmail.com</a></li></ul>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
