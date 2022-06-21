@@ -44,7 +44,7 @@
 								</header>
 								<div class="image main"><video width="100%" height="500" controls><source src="images/Fly.mp4" type="video/mp4"></video></div>
 								<p> In this project, my main goal was to use Reinforcement Learning to learn a policy for the task of position tracking in quadrotor.
-								I used Twin Delayed Deep Deterministic Policy Gradient (TD3) algorithm with a 3 layered Neural Network to for both Policy and Critic Networks. I used Position, Orientation, Translational Velocity, Angular Velocity, Desired Position for states and actions were RPMs (motor speed) for each motor. The resulting policy seems to correlate with target position but has some error. Also, some times the policy oscillates around a target position due to unknown reasons. Further improvement in observation and reward can improve the performance and the previous issues of the policy. <a href="https://github.com/HimGautam/LearningToFly">(Project Link)</a></p>
+								I used Twin Delayed Deep Deterministic Policy Gradient (TD3) algorithm with a 3 layered Neural Network for both Policy and Critic Networks. I used Position Difference, Translational Velocity, Angular Velocity, Rotation Matrix for states and actions were RPMs (motor speed) for each motor. The resulting policy seems to track the target position with an error of 0.06 units. <a href="https://github.com/HimGautam/LearningToFly">(Project Link)</a></p>
 							</section>
 
 							<section class="post">
