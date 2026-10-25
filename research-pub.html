@@ -1,68 +1,76 @@
-<!DOCTYPE HTML>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Publications by Himanshu in robot learning, autonomous systems, and path planning.">
+  <title>Publications | Himanshu</title>
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+  <script src="assets/js/portfolio.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="site-name" href="index.html">Himanshu</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html">About</a><a href="index.html#experience">Experience</a><a href="project.html">Projects</a><a class="active" href="research-pub.html">Publications</a>
+      </nav>
+    </div>
+  </header>
 
-<html>
-	<head>
-		<title>Himanshu</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+  <main id="content" class="container">
+    <header class="page-header">
+      <p class="kicker">Peer-reviewed research</p>
+      <h1>Publications</h1>
+      <p>Research on quadrotor navigation, collision avoidance for heterogeneous UAVs, and nature-inspired path planning for mobile robots.</p>
+    </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <section class="full-publication-list" aria-label="Publications">
+      <article>
+        <div class="publication-year">2023</div>
+        <div class="publication-content">
+          <p class="venue">49th Annual Conference of the IEEE Industrial Electronics Society (IECON)</p>
+          <h2>AGVO: Adaptive Geometry-Based Velocity Obstacle for Heterogenous UAVs Collision Avoidance in UTM</h2>
+          <p class="authors">H. Kumar, D. Datta K., J. V. Pushpangathan, H. Kandath, and A. Dhabale</p>
+          <p>This work studies decentralized collision avoidance for heterogeneous unmanned aerial vehicles operating in unmanned traffic management scenarios.</p>
+          <p><a class="text-link" href="https://doi.org/10.1109/IECON51785.2023.10312682" target="_blank" rel="noreferrer">DOI →</a></p>
+        </div>
+      </article>
 
-				<!-- Header -->
-					<header id="header">
-						<!-- <a href="index.html" class="logo">Himanshu <h6>+91-9161818125 <br> himanshukmr234@gmail.com</h6></a> -->
-					</header>
+      <article>
+        <div class="publication-year">2022</div>
+        <div class="publication-content">
+          <p class="venue">IFAC-PapersOnLine, vol. 55, no. 22, pp. 281–286</p>
+          <h2>Waypoint Navigation of Quadrotor using Deep Reinforcement Learning</h2>
+          <p class="authors"><strong>Himanshu</strong>, H. Kandath, and J. V. Pushpangathan</p>
+          <p>Deep reinforcement learning for quadrotor waypoint navigation, developed and evaluated as part of work at the Robotics Research Center, IIIT Hyderabad.</p>
+          <p class="award">Best Presentation Award · IFAC ACA 2022</p>
+          <p><a class="text-link" href="https://doi.org/10.1016/j.ifacol.2023.03.047" target="_blank" rel="noreferrer">DOI →</a></p>
+        </div>
+      </article>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">About Me</a></li>
-							<li class="active"><a href="research-pub.html">Research & Publication</a></li>
-							<li ><a href="project.html">Project</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="mailto:himanshukmr234@gmail.com" class="icon brands fa-google-plus"><span class="label">Gmail</span></a></li>
-							<li><a href="https://linkedin.com/in/himgautam" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/HimGautam" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+      <article id="path-planning">
+        <div class="publication-year">2022</div>
+        <div class="publication-content">
+          <p class="venue">Innovations in Computational Intelligence and Computer Vision · Springer · pp. 351–361</p>
+          <h2>Path Planning of Mobile Robot Using Adaptive Particle Swarm Optimization</h2>
+          <p class="authors"><strong>Himanshu</strong>, A. Singha, A. Kumar, and A. K. Ray</p>
+          <p>An adaptive particle swarm optimization method for short, collision-free mobile robot paths, evaluated with an e-puck robot in the Webots simulator.</p>
+          <figure class="publication-figure"><img src="images/pic01.gif" alt="Adaptive particle swarm optimization path-planning simulation" loading="lazy"><figcaption>Mobile robot path planning in simulation.</figcaption></figure>
+          <p class="award">Best Paper Award · ICICV 2021</p>
+          <p><a class="text-link" href="https://doi.org/10.1007/978-981-19-0475-2_31" target="_blank" rel="noreferrer">DOI →</a></p>
+        </div>
+      </article>
+    </section>
 
+    <section class="content-section two-column" aria-labelledby="research-context">
+      <div class="section-heading"><h2 id="research-context">Research context</h2></div>
+      <div class="section-body"><p>These publications grew from work in autonomous systems and robotics at IIIT Hyderabad and from undergraduate research in mobile robot navigation. My more recent work extends this foundation toward physical robot manipulation, multimodal demonstrations, force-aware policies, and sim-to-real evaluation.</p></div>
+    </section>
+  </main>
 
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<h3>Path Planning of Mobile Robot using Adaptive Particle Swarm Optimization</h3>
-									
-								</header>
-								<div class="image main"><center><img src="images/pic01.gif" height = "60%", style="width: 60% ;" alt="" /></center></div>
-								<p> In this research project, we developed a novel path planning algorithm for mobile robot navigation using Adaptive Particle Swarm Optimization. The algorithm was able to find the shortest path at the same time avoiding the collision with obstacles. We used e-puck robot from Webots simulator as our testbed for this research project. </p>
-								<p>  Himanshu, A. Singha, A. Kumar, and A. K. Ray, "Path Planning of Mobile Robot using Adaptive Particle Swarm Optimization", in 2nd International Conference on Innovations in Computational Intelligence and Computer Vision, Springer, 2021. (Best Paper Award) <a href="https://link.springer.com/chapter/10.1007/978-981-19-0475-2_31">(Link)</a></p>
-							</section>
-
-					</div>>
-
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy;</li><li>By : <a href="#">Himanshu</a></li></ul>
-						<ul><li><a href="https://linkedin.com/in/himgautam">linkedin.com/in/himgautam</a></li> <li><a href="mailto:himanshukmr234@gmail.com">himanshukmr234@gmail.com</a></li></ul>
-					</div>
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+  <footer class="site-footer"><div class="container"><p>© <span data-year></span> Himanshu</p><p><a href="mailto:himanshu@rwth-aachen.de">himanshu@rwth-aachen.de</a></p></div></footer>
+</body>
 </html>

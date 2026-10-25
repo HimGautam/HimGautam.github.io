@@ -1,142 +1,127 @@
-<!DOCTYPE HTML>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected robotics and machine learning projects by Himanshu.">
+  <title>Projects | Himanshu</title>
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+  <script src="assets/js/portfolio.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="site-name" href="index.html">Himanshu</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html">About</a><a href="index.html#experience">Experience</a><a class="active" href="project.html">Projects</a><a href="research-pub.html">Publications</a>
+      </nav>
+    </div>
+  </header>
 
-<html>
-	<head>
-		<title>Himanshu</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+  <main id="content" class="container">
+    <header class="page-header">
+      <p class="kicker">Research &amp; engineering</p>
+      <h1>Projects</h1>
+      <p>Selected work in robot learning, manipulation, reinforcement learning, and computer vision. Recent projects emphasize physical systems, careful evaluation, and multimodal robot data.</p>
+    </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <section class="project-detail-list" aria-labelledby="recent-projects">
+      <h2 id="recent-projects" class="list-heading">Recent work</h2>
+      <article class="project-detail" id="zeiss-robot-learning">
+        <div class="project-index">01</div>
+        <div class="project-detail-main">
+          <p class="project-meta">Carl Zeiss AG · 2025–2026</p>
+          <h2>Robot Learning for Contact-Rich Assembly</h2>
+          <div class="zeiss-work-grid">
+            <div><h3>Master’s thesis research</h3><p>Developed reinforcement-learning policies that use force feedback for contact-rich assembly in Isaac Lab. Compared observation and reward variants, then evaluated robustness under pose uncertainty, corrupted wrench data, assembly clearances, and unseen geometries.</p></div>
+            <div><h3>Robot learning internship</h3><p>Trained PPO manipulation policies with domain randomization and built a deployment workflow using Python, ROS, Docker, and FrankaPy. Integrated pose observations, policy inference, runtime logging, safety checks, and Cartesian impedance control.</p></div>
+          </div>
+          <div class="media-gallery media-gallery-three">
+            <figure><img src="images/assembly-initial-policy.gif" alt="Initial assembly policy rollout in Isaac Lab" loading="lazy"><figcaption>Initial policy · Isaac Lab</figcaption></figure>
+            <figure><img src="images/assembly-simulation.gif" alt="Successful insertion policy rollout in Isaac Lab" loading="lazy"><figcaption>Insertion policy · Isaac Lab</figcaption></figure>
+            <figure><img src="images/assembly-franka.gif" alt="Successful insertion after deployment to a Franka robot" loading="lazy"><figcaption>Sim-to-real deployment · Franka Panda</figcaption></figure>
+          </div>
+          <ul class="tag-list"><li>Isaac Lab</li><li>PyTorch</li><li>PPO</li><li>Force feedback</li><li>Franka Panda</li><li>Sim-to-real</li></ul>
+        </div>
+      </article>
 
-				<!-- Header -->
-					<header id="header">
-						<!-- <a href="index.html" class="logo">Himanshu <h6>+91-9161818125 <br> himanshukmr234@gmail.com</h6></a> -->
+      <article class="project-detail" id="teleoperation">
+        <div class="project-index">02</div>
+        <div class="project-detail-main">
+          <p class="project-meta">Independent project · 2025–2026</p>
+          <h2>Robot Teleoperation and Multimodal Demonstration Collection</h2>
+          <p>Integrated a 6-DoF AgileX Piper manipulator with Hugging Face LeRobot and developed a Python game-controller interface for physical robot teleoperation.</p>
+          <p>Structured demonstration episodes combine wrist and external RGB images, proprioception, gripper state, and actions. Workspace constraints support safe and repeatable data collection.</p>
+          <ul class="tag-list"><li>AgileX Piper</li><li>LeRobot</li><li>Python</li><li>Multimodal data</li></ul>
+        </div>
+      </article>
 
-					</header>
+      <article class="project-detail" id="paint-policy">
+        <div class="project-index">03</div>
+        <div class="project-detail-main">
+          <p class="project-meta">Challenge project · 2026</p>
+          <h2>Paint Policy Challenge</h2>
+          <p>Evaluated a provided ACT-style action-chunking policy trained from 35 expert demonstrations. The policy used point-cloud observations and was tested with closed-loop rollouts on seven unseen geometries.</p>
+          <p>Ran PyTorch ablations on observations, history, action horizon, execution length, and training perturbations; analyzed coverage, overspray, generalization limits, and failure modes.</p>
+          <ul class="tag-list"><li>Imitation learning</li><li>Action chunking</li><li>Point clouds</li><li>Ablation studies</li></ul>
+        </div>
+      </article>
 
-				<!-- Nav -->
-						<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">About Me</a></li>
-							<!-- <li><a href="research-pub.html">Research & Publication</a></li> -->
-							<li class="active"><a href="project.html">Project</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="mailto:himanshukmr234@gmail.com" class="icon brands fa-google-plus"><span class="label">Gmail</span></a></li>
-							<li><a href="https://linkedin.com/in/himgautam" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/HimGautam" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+      <article class="project-detail" id="behavior-transformer">
+        <div class="project-index">04</div>
+        <div class="project-detail-main with-media">
+          <div>
+            <p class="project-meta">Independent project · 2025–2026</p>
+            <h2>Transformer-Based Imitation Learning</h2>
+            <p>Implemented and evaluated a Behavior Transformer on the PushT environment using PyTorch, visual encoders, action clustering, and temporal sequence modeling.</p>
+            <ul class="tag-list"><li>Behavior Transformer</li><li>PyTorch</li><li>Visual encoders</li><li>PushT</li></ul>
+          </div>
+          <figure class="project-media-figure"><img src="images/behavior-transformer.gif" alt="Behavior Transformer controlling the PushT task" loading="lazy"><figcaption>Closed-loop rollout on PushT.</figcaption></figure>
+        </div>
+      </article>
 
-				<!-- Main -->
-					<div id="main">
+      <article class="project-detail" id="car-racing">
+        <div class="project-index">05</div>
+        <div class="project-detail-main with-media">
+          <div>
+            <p class="project-meta">RWTH Aachen · 2024</p>
+            <h2>Reinforcement Learning Car Racing</h2>
+            <p>Trained a TD3 agent to navigate a race track while avoiding safety cones for the Reinforcement Learning and Learning-Based Control course. The implementation achieved the best score in the competition.</p>
+            <ul class="tag-list"><li>TD3</li><li>Continuous control</li><li>Autonomous driving</li></ul>
+          </div>
+          <video controls playsinline preload="metadata" poster="images/car-racing-poster.jpg"><source src="images/car-racing-web.mp4" type="video/mp4">Your browser cannot play this video. <a href="images/car-racing-web.mp4">Open the MP4 file</a>.</video>
+        </div>
+      </article>
 
-						<!-- Post -->
-									<!-- Featured Post -->
-							
-							<section class="post">
-									<header class="major">
-										<h3>Car Racing Challenge</h3>
-									</header>
-									<div class="image main"><video width="100%" height="500" controls><source src="images/Car_racing.mp4" type="video/mp4"></video></div>
-									<p> As part of my MSc in Robotic Systems Engineering at RWTH Aachen University, I participated in a challenge for the Reinforcement Learning and Learning-Based Control (RLLBC) course. Using the existing Twin Delayed Deep Deterministic Policy Gradient (TD3) algorithm, I taught an autonomous car to navigate a race track and avoid safety cones. My implementation achieved the second-highest score in the class, surpassed only by the course instructor's agent.
+      <article class="project-detail" id="learning-to-fly">
+        <div class="project-index">06</div>
+        <div class="project-detail-main with-media">
+          <div>
+            <p class="project-meta">Aerial robotics</p>
+            <h2>Learning to Fly</h2>
+            <p>Developed a TD3 policy for quadrotor position tracking. The state includes position error, translational velocity, angular velocity, and the rotation matrix; actions control individual motor speeds.</p>
+            <p><a class="text-link" href="https://github.com/HimGautam/LearningToFly" target="_blank" rel="noreferrer">Code on GitHub →</a></p>
+          </div>
+          <video controls playsinline preload="metadata" poster="images/learning-to-fly-poster.jpg"><source src="images/learning-to-fly-web.mp4" type="video/mp4">Your browser cannot play this video. <a href="images/learning-to-fly-web.mp4">Open the MP4 file</a>.</video>
+        </div>
+      </article>
+    </section>
 
-										Note: The code for this project is not available as it was part of a class. <a href="https://github.com/HimGautam/LearningToFly">(Project Link)</a></p>
-							</section>
-							
-							<section class="post">
-								<header class="major">
-									<h3>Learning to Fly</h3>
-								</header>
-								<div class="image main"><video width="100%" height="500" controls><source src="images/Fly.mp4" type="video/mp4"></video></div>
-								<p> In this project, my main goal was to use Reinforcement Learning to learn a policy for the task of position tracking in quadrotor.
-								I used Twin Delayed Deep Deterministic Policy Gradient (TD3) algorithm with a 3 layered Neural Network for both Policy and Critic Networks. I used Position Difference, Translational Velocity, Angular Velocity, Rotation Matrix for states and actions were RPMs (motor speed) for each motor. The resulting policy seems to track the target position with an error of 0.06 units. <a href="https://github.com/HimGautam/LearningToFly">(Project Link)</a></p>
-							</section>
+    <section class="content-section archive-section" aria-labelledby="archive-title">
+      <div class="section-intro"><h2 id="archive-title">Earlier projects</h2><p>Foundational experiments in reinforcement learning and computer vision.</p></div>
+      <div class="archive-grid">
+        <article><img src="images/pic02.gif" alt="Bipedal Walker simulation" loading="lazy"><h3>Bipedal Walker</h3><p>Comparison of NEAT, PPO, DDPG, parameter-noise DDPG, and TD3 on continuous control.</p><a href="https://github.com/HimGautam/BipedalWalkerTD3" target="_blank" rel="noreferrer">GitHub →</a></article>
+        <article><img src="images/pic03.gif" alt="Cartpole balancing simulation" loading="lazy"><h3>Cartpole</h3><p>PPO and DDPG implementations for the classic Cartpole control task.</p><a href="https://github.com/HimGautam/ppo-cartpole" target="_blank" rel="noreferrer">GitHub →</a></article>
+        <article><img src="images/pic04.gif" alt="AI agent playing Breakout" loading="lazy"><h3>Breakout AI</h3><p>A Double DQN agent learning directly from image observations.</p><a href="https://github.com/HimGautam/Breakout-Playing-AI" target="_blank" rel="noreferrer">GitHub →</a></article>
+        <article><img src="images/pic05.gif" alt="Semantic segmentation of an urban scene" loading="lazy"><h3>Semantic Segmentation</h3><p>EfficientNet-based urban scene segmentation using transfer learning.</p><a href="https://github.com/HimGautam/Semantic-Segmentation" target="_blank" rel="noreferrer">GitHub →</a></article>
+        <article><img src="images/pic06.gif" alt="Monocular depth estimation output" loading="lazy"><h3>Depth Estimation</h3><p>Monocular depth estimation trained from stereo image pairs.</p><a href="https://github.com/HimGautam/Depth-Estimation-" target="_blank" rel="noreferrer">GitHub →</a></article>
+        <article><img src="images/pic07.gif" alt="Face-mask detection demonstration" loading="lazy"><h3>Face Mask Detection</h3><p>Real-time mask classification using Haar cascades and a convolutional network.</p><a href="https://github.com/HimGautam/Face-Mask-Detection" target="_blank" rel="noreferrer">GitHub →</a></article>
+      </div>
+    </section>
+  </main>
 
-							<section class="post">
-								<header class="major">
-									<h3>Bipedal Walker</h3>
-								</header>
-								<div class="image main"><center><img src="images/pic02.gif" height = "60%", style="width:80%", alt="" /></center></div>
-								<p> Through this project my aim was to test various Reinforcement Learning Algorithm for continouos control problem before they could be applied in research work. I used OpenAI Gym's Bipedal Walker Environment in this project. Due to the simplicity of this environment, the implementation and debugging of RL algorithm can easily be done. I used this environment for testing Neuroevolution of augmenting topologies (NEAT), Proximal Policy Optimization (PPO), Deep Deterministic Policy Gradient (DDPG), DDPG with parameter noise, Twin Delayed Deep Deterministic Policy Gradient (TD3). </p>
-								<p> Neuroevolution of augmenting topologies (NEAT) <a href="https://github.com/HimGautam/BipedalWalkerNEAT">(Project Link)</a> <br/>
-									Proximal Policy Optimization (PPO) <a href="https://github.com/HimGautam/BipedalWalkerPPO">(Project Link)</a> </br>
-									Deep Deterministic Policy Gradient (DDPG) <a href="https://github.com/HimGautam/BipedalWalkerDDPG">(Project Link)</a> </br>
-									DDPG with parameter noise <a href="https://github.com/HimGautam/BipedalWalkerDDPG/tree/main/ParamNoise">(Project Link)</a> </br>
-									Twin Delayed Deep Deterministic Policy Gradient (TD3) <a href="https://github.com/HimGautam/BipedalWalkerTD3">(Project Link)</a></p>
-							</section>
-
-							<section class="post">
-								<header class="major">
-									<h3>Cartpole</h3>
-								</header>
-								<div class="image main"><center><img src="images/pic03.gif" height = "50%", style="width:70%", alt="" /></center></div>
-								<p> This project tries to solve the control problem of Cartpole Balancing using Reinforcement Learning Methods. The environment used in this project is from OpenAI Gym's Cartpole Environment. It uses discreet action space (go left or go right) to control the cart which inturn balances the pole. I have used PPO and DDPG for this project</p>
-								<p> Proximal Policy Optimization (PPO) <a href="https://github.com/HimGautam/ppo-cartpole">(Project Link)</a> <br/>
-									Deep Deterministic Policy Gradient (DDPG) <a href="https://github.com/HimGautam/CartpoleDDPG">(Project Link)</a></p>
-							</section>
-
-							<section class="post">
-								<header class="major">
-									<h3>Breakout AI</h3>
-								</header>
-								<div class="image main"><center><img src="images/pic04.gif" height = "50%", style="width:50%", alt="" /></center></div>
-								<p> This project is based on the paper named "Deep Reinforcement Learning with Double Q-learning" (DDQN). It uses a Convolutional Neural Network to learn a Q function. This Q function can then be used to choose action which gave have best Q Value. For exploration, we sometime choose a random action, thus forming a Epsilon Greedy Policy. <a href="https://github.com/HimGautam/Breakout-Playing-AI">(Project Link)</a> </p>
-							</section>
-
-							<section class="post">
-								<header class="major">
-									<h3>Semantic Segmentation</h3>
-								</header>
-								<div class="image main"><center><img src="images/pic05.gif" height = "60%", style="width:60%", alt="" /></center></div>
-								<p> This project was a part of my final year thesis. In this, a Convolutional Neural Network (EfficientNet) is used to learn semantic information from an RGB image of an Urban Scene. I used a method called tranfer learning to reduce computational burden. <a href="https://github.com/HimGautam/Semantic-Segmentation">(Project Link)</a> </p>
-							</section>
-
-							<section class="post">
-								<header class="major">
-									<h3>Depth Estimation</h3>
-								</header>
-								<div class="image main"><center><img src="images/pic06.gif" height = "60%", style="width:60%", alt=""/></center></div>
-								<p> This project was a part of my final year thesis. In this, a Convolutional Neural Network (EfficientNet) is used to learn depth information from an RGB image of an Urban Scene. During the training process, stereo image pair are used. During the inference, only one image is used to predict the Depth/Disparity map from an image. Tranfer learning is also used to reduce computational burden. <a href="https://github.com/HimGautam/Depth-Estimation-">(Project Link)</a> </p>
-							</section>
-
-							<section class="post">
-								<header class="major">
-									<h3>Face Mask Detection</h3>
-								</header>
-								<div class="image main"><center><img src="images/pic07.gif" height = "60%", style="width:60%", alt=""/></center></div>
-								<p> This project was a part of my Internship Project. It is uses Haar Cascade and Convolutional Neural Network to determine if a Person has the Covid Mask On or not. <a href="https://github.com/HimGautam/Face-Mask-Detection">(Project Link)</a> </p>
-							</section>
-
-							<section class="post">
-								<header class="major">
-									<h3>Face Detector</h3>
-								</header>
-								<div class="image main"><center><img src="images/pic08.gif" height = "60%", style="width:60%", alt=""/></center></div>
-								<p> In this project we use OpenCV and HaarCascade for face detection.<a href="https://github.com/HimGautam/Face-Detection">(Project Link)</a> </p>
-							</section>
-					</div>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy;</li><li>By : <a href="#">Himanshu</a></li></ul>
-						<ul><li><a href="https://linkedin.com/in/himgautam">linkedin.com/in/himgautam</a></li> <li><a href="mailto:himanshukmr234@gmail.com">himanshukmr234@gmail.com</a></li></ul>
-					</div>
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+  <footer class="site-footer"><div class="container"><p>© <span data-year></span> Himanshu</p><p><a href="mailto:himanshu@rwth-aachen.de">himanshu@rwth-aachen.de</a></p></div></footer>
+</body>
 </html>

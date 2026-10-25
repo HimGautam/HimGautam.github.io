@@ -1,120 +1,152 @@
-<!DOCTYPE HTML>
-<!--
-    Massively by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-    <head>
-        <title>Himanshu</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-        <style>
-            .profile-container {
-                display: flex;
-                flex-direction: column;
-                align-items: center; /* Center horizontally */
-                text-align: center;
-            }
-            .profile-info {
-                margin-top: 20px; /* Add space above the info */
-            }
-        </style>
-    </head>
-    <body class="is-preload">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Himanshu is a robotics and machine learning researcher working on robot learning, manipulation, and autonomous systems.">
+  <title>Himanshu | Robotics and Machine Learning</title>
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+  <script src="assets/js/portfolio.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="site-name" href="index.html">Himanshu</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a class="active" href="index.html">About</a>
+        <a href="#experience">Experience</a>
+        <a href="project.html">Projects</a>
+        <a href="research-pub.html">Publications</a>
+      </nav>
+    </div>
+  </header>
 
-        <!-- Wrapper -->
-            <div id="wrapper" class="fade-in">
+  <main id="content" class="container">
+    <section class="profile" aria-labelledby="profile-name">
+      <div class="profile-copy">
+        <p class="kicker">Robotics · Machine Learning</p>
+        <h1 id="profile-name">Himanshu</h1>
+        <p class="role">M.Sc. candidate in Robotic Systems Engineering at RWTH Aachen University.</p>
+        <p>I work on robot learning, manipulation, and autonomous systems. My current research focuses on learning force-aware policies for contact-rich assembly, with an emphasis on controlled evaluation, robustness, and sim-to-real deployment.</p>
+        <p>At ZEISS Corporate Research &amp; Technology, I have developed reinforcement-learning policies for robotic manipulation and deployment workflows for Franka hardware. Previously, I worked on sensor fusion and localization at RWTH Aachen and on aerial robotics at IIIT Hyderabad.</p>
+        <ul class="profile-links" aria-label="Contact and profiles">
+          <li class="email-options"><a href="mailto:himanshu@rwth-aachen.de">Email me</a><button type="button" data-copy-email="himanshu@rwth-aachen.de">Copy email</button><span class="copy-status" role="status" aria-live="polite"></span></li>
+          <li><a href="https://github.com/HimGautam" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/himgautam" target="_blank" rel="noreferrer">LinkedIn</a></li>
+        </ul>
+      </div>
+      <figure class="profile-photo">
+        <img src="images/himanshu-professional.jpeg" alt="Professional portrait of Himanshu" width="1600" height="1405">
+        <figcaption>Aachen, Germany</figcaption>
+      </figure>
+    </section>
 
-                <!-- Intro -->
-                    <div id="intro">
-                        <div class="profile-container">
-                            <img src="images/profilepic.jpeg" height="300" width="300" style="border-radius: 45%;" >
-                            <div class="profile-info">
-                                <h3>Himanshu</h3>
-                                <h6>Aachen, Germany - 52072</h6>
-                                <h6>himanshu@rwth-aachen.de • himanshukmr234@gmail.com</h6>
-                                <h6>
-                                    <a href="https://linkedin.com/in/himgautam">linkedin.com/in/himgautam</a>
-                                    • 
-                                    <a href="https://github.com/HimGautam">github.com/HimGautam</a>
-                                </h6>
-                            </div>
-                        </div>
-                        <ul class="actions">
-                            <li><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-                        </ul>
-                    </div>
+    <aside class="current-work" aria-label="Current work">
+      <span>Current focus</span>
+      <p><strong>Master’s thesis at ZEISS:</strong> Learning force-aware policies for contact-rich assembly tasks using reinforcement learning.</p>
+    </aside>
 
-                <!-- Header -->
-                    <!-- <header id="header">
-                        <a href="index.html" class="logo">Himanshu <h6>+91-9161818125 <br> himanshukmr234@gmail.com</h6></a>
-                    </header> -->
+    <section class="content-section two-column" aria-labelledby="news-title">
+      <div class="section-heading"><h2 id="news-title">News</h2></div>
+      <div class="section-body">
+        <ul class="news-list">
+          <li><time datetime="2026-10">Oct 2026</time><p>Completed master’s thesis research on force-aware reinforcement learning for contact-rich assembly at ZEISS Corporate Research &amp; Technology.</p></li>
+          <li><time datetime="2025">2025</time><p>Won the Reply × BEST Aachen “AI Agents in Action” coding challenge.</p></li>
+          <li><time datetime="2026-03">Mar 2026</time><p>Completed a robot learning internship at ZEISS, working on PPO, domain randomization, and sim-to-real manipulation.</p></li>
+          <li><time datetime="2024">2024</time><p>Achieved the best score in RWTH Aachen’s reinforcement-learning car racing competition.</p></li>
+        </ul>
+      </div>
+    </section>
 
-                <!-- Nav -->
-                    <nav id="nav">
-                        <ul class="links">
-                            <li class="active"><a href="index.html">About Me</a></li>
-                            <li><a href="project.html">Projects</a></li>
-                        </ul>
-                        <ul class="icons">
-                            <li><a href="mailto:himanshukmr234@gmail.com" class="icon brands fa-google-plus"><span class="label">Gmail</span></a></li>
-                            <li><a href="https://linkedin.com/in/himgautam" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                            <li><a href="https://github.com/HimGautam" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                        </ul>
-                    </nav>
+    <section class="content-section" aria-labelledby="interests-title">
+      <div class="section-intro">
+        <h2 id="interests-title">Research interests</h2>
+        <p>I am interested in learning systems that remain reliable when they leave simulation and encounter uncertain physical environments.</p>
+      </div>
+      <div class="interest-grid">
+        <article><h3>Robot learning</h3><p>Reinforcement and imitation learning, behavior cloning, action chunking, multimodal demonstrations, and policy evaluation.</p></article>
+        <article><h3>Manipulation &amp; sim-to-real</h3><p>Contact-rich assembly, force feedback, domain randomization, Cartesian impedance control, and deployment on physical robots.</p></article>
+        <article><h3>State estimation</h3><p>Sensor fusion, Kalman filtering, localization, uncertainty analysis, and systematic experimental evaluation.</p></article>
+      </div>
+    </section>
 
-                <!-- Main -->
-                    <div id="main">
+    <section class="content-section two-column" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><h2 id="experience-title">Experience</h2></div>
+      <div class="section-body timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">May–Oct 2026</div>
+          <div><h3>Master’s Thesis Researcher, Robot Learning</h3><p class="affiliation">Carl Zeiss AG · Corporate Research &amp; Technology</p><p>Developed force-aware reinforcement-learning policies for contact-rich assembly in Isaac Lab. Designed controlled robustness experiments and evaluated configuration-dependent force and torque bias on Franka hardware.</p><a class="experience-link" href="project.html#zeiss-robot-learning">View assembly experiments →</a></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">Sep 2025–Mar 2026</div>
+          <div><h3>Robot Learning Intern</h3><p class="affiliation">Carl Zeiss AG · Corporate Research &amp; Technology</p><p>Trained PPO manipulation policies with PyTorch, Isaac Gym, and Isaac Lab, then built a ROS- and FrankaPy-based workflow for deployment with runtime logging and safety checks.</p><a class="experience-link" href="project.html#zeiss-robot-learning">View simulation-to-real results →</a></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">Aug 2024–Aug 2025</div>
+          <div><h3>Student Assistant, Sensor Fusion and Localization</h3><p class="affiliation">Institute of Automatic Control · RWTH Aachen University</p><p>Evaluated Kalman and unscented Kalman filters through reproducible localization experiments in Python and MATLAB.</p></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">Jun 2022–May 2023</div>
+          <div><h3>Project Assistant, Autonomous Systems and Robotics</h3><p class="affiliation">Robotics Research Center · IIIT Hyderabad</p><p>Developed TD3 quadrotor control policies, evaluated UWB localization in DJI flight tests, and contributed to research on waypoint navigation and multi-UAV collision avoidance.</p></div>
+        </article>
+      </div>
+    </section>
 
-                        <!-- Featured Post -->
-                            <article class="post featured">
-                                <header class="major">
-                                    <h3>Welcome to my webpage!</h3>
-                                    <p> I am Himanshu, currently pursuing MSc in Robotic Systems Engineering. My main area of research interests are Deep Learning, Reinforcement Learning, Control Theory and State Estimation. In reinforcement learning my main interest are in the construction of reward function from human feedback.</p>
+    <section class="content-section" aria-labelledby="projects-title">
+      <div class="section-intro section-intro-link">
+        <div><h2 id="projects-title">Selected projects</h2><p>Recent work in physical robot learning and imitation learning.</p></div>
+        <a href="project.html">View all projects →</a>
+      </div>
+      <div class="visual-project-grid">
+        <article class="visual-project visual-project-wide">
+          <a class="visual-project-media media-comparison" href="project.html#zeiss-robot-learning" aria-label="View robot learning work at ZEISS">
+            <figure><img src="images/assembly-simulation.gif" alt="Robot policy completing an insertion task in Isaac Lab" loading="lazy"><figcaption>Isaac Lab</figcaption></figure>
+            <figure><img src="images/assembly-franka.gif" alt="Insertion policy transferred to a physical Franka robot" loading="lazy"><figcaption>Franka deployment</figcaption></figure>
+          </a>
+          <div class="visual-project-copy"><p class="project-meta">ZEISS · 2025–2026</p><h3><a href="project.html#zeiss-robot-learning">Learning policies for contact-rich assembly</a></h3><p>Reinforcement-learning policies, controlled robustness experiments, and sim-to-real deployment on a Franka Panda.</p><ul class="tag-list"><li>Isaac Lab</li><li>PPO</li><li>Force feedback</li><li>Sim-to-real</li></ul></div>
+        </article>
+        <article class="visual-project">
+          <a class="visual-project-media" href="project.html#behavior-transformer"><img src="images/behavior-transformer.gif" alt="Behavior Transformer controlling the PushT task" loading="lazy"></a>
+          <div class="visual-project-copy"><p class="project-meta">Independent · 2025–2026</p><h3><a href="project.html#behavior-transformer">Transformer-Based Imitation Learning</a></h3><p>A Behavior Transformer using visual encoders, action clustering, and temporal sequence modeling.</p></div>
+        </article>
+        <article class="visual-project">
+          <div class="visual-project-media"><video controls playsinline preload="metadata" poster="images/car-racing-poster.jpg"><source src="images/car-racing-web.mp4" type="video/mp4">Your browser cannot play this video. <a href="images/car-racing-web.mp4">Open the MP4 file</a>.</video></div>
+          <div class="visual-project-copy"><p class="project-meta">RWTH Aachen · 2024</p><h3><a href="project.html#car-racing">Reinforcement Learning Car Racing</a></h3><p>A TD3 agent for track navigation and cone avoidance; best score in the course competition.</p></div>
+        </article>
+      </div>
+    </section>
 
-                                    
-                                </header>
-                                
-                                <!-- Publications Section -->
-                                <section id="publications">
-									<h4>Publications</h4>
-									<!-- <p>Here are some of my selected publications:</p> -->
-									<ul>
-										<li style="font-size: 0.75em;"> H. Kumar, D. Datta K., J. V. Pushpangathan, H. Kandath and A. Dhabale, "AGVO: Adaptive
-											Geometry-based Velocity Obstacle for Heterogeneous UAVs Collision Avoidance in UTM", in
-											IECON 2023- 49th Annual Conference of the IEEE Industrial Electronics Society, 2023.</li>
-										<li style="font-size: 0.75em;"> Himanshu, H. Kandath, J. V. Pushpangathan, "Waypoint Navigation of Quadrotor using
-											Deep Reinforcement Learning", in 22nd IFAC International Symposium on Automatic Control in
-											Aerospace, 2022. (Best Presentation Award)</li>
-										<li style="font-size: 0.75em;">Himanshu, A. Singha, A. Kumar, and A. K. Ray, "Path Planning of Mobile Robot using
-											Adaptive Particle Swarm Optimization", in 2nd Int. Conf. on Innovations in Computational
-											Intelligence and Computer Vision, Springer, 2021. (Best Paper Award)</li>
-									</ul>
-								</section>
-								
-                            </article>
+    <section class="content-section two-column" aria-labelledby="publications-title">
+      <div class="section-heading"><h2 id="publications-title">Selected publications</h2><a class="section-link" href="research-pub.html">All publications →</a></div>
+      <div class="section-body publication-list">
+        <article><p class="venue">IEEE IECON 2023</p><h3>AGVO: Adaptive Geometry-Based Velocity Obstacle for Heterogenous UAVs Collision Avoidance in UTM</h3><p>H. Kumar, D. Datta K., J. V. Pushpangathan, H. Kandath, and A. Dhabale.</p><a href="https://doi.org/10.1109/IECON51785.2023.10312682" target="_blank" rel="noreferrer">DOI →</a></article>
+        <article><p class="venue">IFAC-PapersOnLine 2022 · Best Presentation Award</p><h3>Waypoint Navigation of Quadrotor using Deep Reinforcement Learning</h3><p><strong>Himanshu</strong>, H. Kandath, and J. V. Pushpangathan.</p><a href="https://doi.org/10.1016/j.ifacol.2023.03.047" target="_blank" rel="noreferrer">DOI →</a></article>
+        <article><p class="venue">Springer 2022 · Best Paper Award, ICICV 2021</p><h3>Path Planning of Mobile Robot Using Adaptive Particle Swarm Optimization</h3><p><strong>Himanshu</strong>, A. Singha, A. Kumar, and A. K. Ray.</p><a href="https://doi.org/10.1007/978-981-19-0475-2_31" target="_blank" rel="noreferrer">DOI →</a></article>
+      </div>
+    </section>
 
-                    </div>
+    <section class="content-section two-column" aria-labelledby="education-title">
+      <div class="section-heading"><h2 id="education-title">Education</h2></div>
+      <div class="section-body education-list">
+        <article><div><h3>M.Sc. Robotic Systems Engineering</h3><p>RWTH Aachen University · Germany</p><p class="thesis">Thesis: Learning Force-Aware Policies for Contact-Rich Assembly Tasks Using Reinforcement Learning.</p></div><time>2023–present</time></article>
+        <article><div><h3>B.Tech. Electrical and Electronics Engineering</h3><p>National Institute of Technology Sikkim · India</p><p class="thesis">Thesis: Visual Scene Understanding Using Deep Learning.</p></div><time>2017–2021</time></article>
+      </div>
+    </section>
 
-                <!-- Copyright -->
-                    <div id="copyright">
-                        <ul><li>&copy;</li><li>By : <a href="#">Himanshu</a></li></ul>
-                        <ul><li><a href="https://linkedin.com/in/himgautam">linkedin.com/in/himgautam</a></li> <li><a href="mailto:himanshukmr234@gmail.com">himanshukmr234@gmail.com</a></li></ul>
-                    </div>
+    <section class="content-section two-column" aria-labelledby="skills-title">
+      <div class="section-heading"><h2 id="skills-title">Methods &amp; tools</h2></div>
+      <div class="section-body skills-list">
+        <p><strong>Learning:</strong> PyTorch, TensorFlow, PPO, TD3, SAC, behavior cloning, ACT-style action chunking</p>
+        <p><strong>Robotics:</strong> ROS/ROS2, Isaac Lab, Isaac Sim, Isaac Gym, MuJoCo, PyBullet, Webots, FrankaPy, LeRobot</p>
+        <p><strong>Engineering:</strong> Python, MATLAB/Simulink, C++, Git, Linux, Docker, LaTeX</p>
+      </div>
+    </section>
+  </main>
 
-            </div>
-
-        <!-- Scripts -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.scrollex.min.js"></script>
-            <script src="assets/js/jquery.scrolly.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
-
-    </body>
+  <footer class="site-footer">
+    <div class="container"><p>© <span data-year></span> Himanshu</p><p><a href="mailto:himanshu@rwth-aachen.de">himanshu@rwth-aachen.de</a></p></div>
+  </footer>
+</body>
 </html>
